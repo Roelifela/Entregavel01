@@ -3,7 +3,9 @@ package br.com.digitalhouse;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class Curso {
+
     private String nomeCurso;
     private int codigoCurso;
     private ProfessorTitular professorTitular;
@@ -69,14 +71,13 @@ public class Curso {
         this.alunoList = alunoList;
     }
 
-    public boolean adicionarUmAluno(Aluno aluno){
-        if(alunoList.size() >= this.getNumeroMaximoAluno()){
+    public boolean adicionarUmAluno(Aluno aluno) {
+        if (alunoList.size() >= this.getNumeroMaximoAluno()) {
             return false;
-        }else{
+        } else {
             return true;
         }
     }
-
 
 
     @Override
@@ -95,6 +96,8 @@ public class Curso {
     @Override
     public String toString() {
         return "\t CODIGO CURSO......: " + this.codigoCurso +
-               "\n NOME CURSO........: " + this.nomeCurso;
+                "\n NOME CURSO........: " + this.nomeCurso;
     }
+
+
 }

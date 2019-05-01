@@ -16,4 +16,6 @@ public class ProfessorTitular extends Professor{
     public void setHoraMonitoria(int horaMonitoria) {
         this.horaMonitoria = horaMonitoria;
     }
+
+
 }
